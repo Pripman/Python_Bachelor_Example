@@ -1,0 +1,62 @@
+Options for the verification:
+  Generating no trace
+  Search order is breadth first
+  Using conservative space optimisation
+  Seed is 1428923262
+  State space representation uses minimal constraint systems
+[2K
+Verifying formula 1: E<> Gate.Occ
+			
+[2K -- Formula is satisfied.
+[2K
+Verifying formula 2: E<> Train(0).Cross
+			
+[2K -- Formula is satisfied.
+[2K
+Verifying formula 3: E<> Train(1).Cross
+			
+[2K -- Formula is satisfied.
+[2K
+Verifying formula 4: E<> Train(0).Cross and Train(1).Stop
+			
+[2K -- Formula is satisfied.
+[2K
+Verifying formula 5: E<> Train(0).Cross and (forall (i : id_t) i != 0 imply Train(i).Stop)
+			
+ -- Throughput: 23647 states/sec, Load: 215 states[K[2K -- Formula is satisfied.
+[2K
+Verifying formula 6: A[] forall (i : id_t) forall (j : id_t) Train(i).Cross && Train(j).Cross imply i == j
+			
+ -- Throughput: 4127 states/sec, Load: 215 states[K -- Throughput: 135562 states/sec, Load: 1559 states[K[2K -- Formula is satisfied.
+[2K
+Verifying formula 7: A[] Gate.list[N] == 0
+			
+ -- Throughput: 1552 states/sec, Load: 215 states[K -- Throughput: 167151 states/sec, Load: 1098 states[K[2K -- Formula is satisfied.
+[2K
+Verifying formula 8: Train(0).Appr --> Train(0).Cross
+			
+ -- Throughput: 1042 states/sec, Load: 1 states[K -- Throughput: 162511 states/sec, Load: 12 states[K[2K -- Formula is satisfied.
+[2K
+Verifying formula 9: Train(1).Appr --> Train(1).Cross
+			
+ -- Throughput: 558 states/sec, Load: 2 states[K -- Throughput: 165286 states/sec, Load: 2 states[K[2K -- Formula is satisfied.
+[2K
+Verifying formula 10: Train(2).Appr --> Train(2).Cross
+			
+ -- Throughput: 380 states/sec, Load: 3 states[K -- Throughput: 165940 states/sec, Load: 3 states[K[2K -- Formula is satisfied.
+[2K
+Verifying formula 11: Train(3).Appr --> Train(3).Cross
+			
+ -- Throughput: 289 states/sec, Load: 4 states[K -- Throughput: 158817 states/sec, Load: 4 states[K[2K -- Formula is satisfied.
+[2K
+Verifying formula 12: Train(4).Appr --> Train(4).Cross
+			
+ -- Throughput: 232 states/sec, Load: 5 states[K -- Throughput: 163623 states/sec, Load: 5 states[K[2K -- Formula is satisfied.
+[2K
+Verifying formula 13: Train(5).Appr --> Train(5).Cross
+			
+ -- Throughput: 194 states/sec, Load: 6 states[K -- Throughput: 165534 states/sec, Load: 6 states[K[2K -- Formula is satisfied.
+[2K
+Verifying formula 14: A[] not deadlock
+			
+ -- Throughput: 167 states/sec, Load: 215 states[K -- Throughput: 68627 states/sec, Load: 345 states[K[2K -- Formula is satisfied.
